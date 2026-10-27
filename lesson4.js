@@ -1,0 +1,107 @@
+// Begin1. Kvadratning tomoni a berilgan. Uning perimetri aniqlansin. P = 4 * a
+
+let a1 =12;
+let P=4*a1;
+console.log(P)
+
+
+// Begin2. Kvadratning tomoni a berilgan. Uning yuzasi aniqlansin. S = a^2
+let a2=12;
+let S2= a2**2
+console.log(S2)
+// Begin3. To'g'ri to'rtburchakning tomonlari a va b berilgan. Uning yuzasi S = a * b va perimetri P = 2 * (a + b) aniqlansin.
+
+let a3=12,b3=10;
+let S3=a3* b3
+let P3=2*(a3+b3)
+console.log(S3,P3)
+
+
+// Begin4. Aylananing diametri d berilgan. Uning uzunligi aniqlansin. L = pi * d, pi = 3.14
+
+
+let d4=20;
+
+let l4= d4 * Math.PI
+console.log(l4)
+
+
+// Begin5. Kubning yon tomoni a berilgan. Uning hajmi V = a^3 va to'la sirti S = 6 * a^2 aniqlansin.
+
+let a5=6;
+let v5=a5**3
+let s5=6*(a5**2)
+console.log(v5, s5)
+
+
+
+
+
+
+// Begin6. Paralelepipedning tomonlari a, b, c berilgan. Uning hajmi V = a * b * c va to'la sirti S = 2 * (a*b + b*c + a*c) aniqlansin.
+
+let a6=6,b6=12,c6=12;
+let v6=a6*b6*c6;
+let s6 = 2*(a6*b6+ a6*c6 + b6*c6)
+console.log(v6,s6)
+
+
+
+// Begin7. Doiraning radiusi R berilgan. Uning uzunligi L va yuzasi S aniqlansin. L = 2 * pi * R, S = pi * R^2
+
+let r7=12;
+let l7=2*Math.PI*r7;
+let s7=Math.PI*(r7**2)
+
+console.log(l7,s7)
+// Begin8. Ikkita son a va b berilgan. Ularning o'rta arifmetigi aniqlansin. (a + b) / 2
+
+let a8=12,b8=89;
+
+console.log((a8+b8)/2)
+
+
+
+
+
+// Begin9. Ikkita manfiy bo'lmagan son a va b berilgan. Ularning o'rta geometrigi aniqlansin. sqrt(a * b)
+
+let a9=12, b9=12;
+
+console.log((a9*b9)**.5)
+
+
+
+
+
+
+// Begin10. Nolga teng bo'lmagan ikkita son berilgan. Ularning yig'indisini, ko'paytmasini va har birining kvadrati aniqlansin.
+
+let a10=12,b10=12;
+console.log(a10+b10)
+console.log(a10*b10)
+console.log(a10**2)
+console.log(b10**2)
+
+
+
+
+
+// Begin11. Nolga teng bo'lmagan ikkita son berilgan. Ularning yig'indisini, ko'paytmasini va har birining moduli aniqlansin.
+
+let a11=12,b11=12;
+console.log(a11+b11)
+console.log(a11*b11)
+console.log(Math.abs(a11))
+console.log(Math.abs(b11))
+
+
+
+
+
+// Begin12. To'g'ri uchburchakning katetlari a va b berilgan. Uning gipotenuzasi c va perimetri P aniqlansin. c = sqrt(a^2 + b^2), P = a + b + c
+
+
+let a12=12,b12=5;
+let c12=Math.sqrt(a12**2+b12**2)
+console.log(c12, a12+ b12+c12)
