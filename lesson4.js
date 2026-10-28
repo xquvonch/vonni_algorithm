@@ -64,7 +64,8 @@ console.log((a8+b8)/2)
 
 
 
-// Begin9. Ikkita manfiy bo'lmagan son a va b berilgan. Ularning o'rta geometrigi aniqlansin. sqrt(a * b)
+// Begin9. Ikkita manfiy bo'lmagan son a va b berilgan. 
+// Ularning o'rta geometrigi aniqlansin. sqrt(a * b)
 
 let a9=12, b9=12;
 
@@ -75,7 +76,8 @@ console.log((a9*b9)**.5)
 
 
 
-// Begin10. Nolga teng bo'lmagan ikkita son berilgan. Ularning yig'indisini, ko'paytmasini va har birining kvadrati aniqlansin.
+// Begin10. Nolga teng bo'lmagan ikkita son berilgan.
+//  Ularning yig'indisini, ko'paytmasini va har birining kvadrati aniqlansin.
 
 let a10=12,b10=12;
 console.log(a10+b10)
@@ -87,7 +89,8 @@ console.log(b10**2)
 
 
 
-// Begin11. Nolga teng bo'lmagan ikkita son berilgan. Ularning yig'indisini, ko'paytmasini va har birining moduli aniqlansin.
+// Begin11. Nolga teng bo'lmagan ikkita son berilgan. 
+// Ularning yig'indisini, ko'paytmasini va har birining moduli aniqlansin.
 
 let a11=12,b11=12;
 console.log(a11+b11)
@@ -99,9 +102,53 @@ console.log(Math.abs(b11))
 
 
 
-// Begin12. To'g'ri uchburchakning katetlari a va b berilgan. Uning gipotenuzasi c va perimetri P aniqlansin. c = sqrt(a^2 + b^2), P = a + b + c
+// Begin12. To'g'ri uchburchakning katetlari a va b berilgan.
+//  Uning gipotenuzasi c va perimetri P aniqlansin. c = sqrt(a^2 + b^2), P = a + b + c
 
 
 let a12=12,b12=5;
 let c12=Math.sqrt(a12**2+b12**2)
 console.log(c12, a12+ b12+c12)
+
+
+// Begin13. Umumiy markazga ega bo'lgan ikkita aylana radiusi berilgan: R1, R2 (R1 > R2).
+// Ularning yuzalari S1 va S2, ularning ayirmasi S3 aniqlansin.
+// S1 = π·R1², S2 = π·R2², S3 = π·(R1² − R2²)
+
+
+
+let R13_1=13, R13_2=12
+
+let s13=Math.PI*(R13_1**2 - R13_2**2)
+console.log(s13)
+
+
+// Begin14. Aylananing uzunligi L berilgan. Uning radiusi R va yuzasi S aniqlansin.
+// L = 2·π·R, S = π·R², π = 3.14
+
+let L14=24
+let r14,s14;
+r14 = L14/(2*Math.PI*2)
+s14 = Math.PI * r14**2
+console.log(s14)
+
+
+// Begin15. Aylananing yuzasi S berilgan. Uning diametri d va radiusi R aniqlansin.
+// L = 2·π·R, S = π·R², π = 3.14
+
+let s15= 90
+let d15,r15;
+r15 = Math.sqrt(s15/Math.PI)
+d15 = r15 * 2
+console.log(r15, d15)
+
+
+// Begin16. Sonlar o'qida ikkita nuqta orasidagi masofa aniqlansin.
+// |x2 − x1|
+
+
+
+let x16_1=0,x16_2=2;
+let d ;
+d = Math.abs(x16_1-x16_2)
+console.log(d)
