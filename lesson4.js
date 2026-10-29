@@ -118,9 +118,8 @@ console.log(c12, a12+ b12+c12)
 
 
 let R13_1=13, R13_2=12
-
 let s13=Math.PI*(R13_1**2 - R13_2**2)
-console.log(s13)
+console.log(s13, R13_1**2*Math.PI,R13_2**2 * Math.PI)
 
 
 // Begin14. Aylananing uzunligi L berilgan. Uning radiusi R va yuzasi S aniqlansin.
@@ -128,9 +127,9 @@ console.log(s13)
 
 let L14=24
 let r14,s14;
-r14 = L14/(2*Math.PI*2)
+r14 = L14/(2*Math.PI)
 s14 = Math.PI * r14**2
-console.log(s14)
+console.log(s14 , r14)
 
 
 // Begin15. Aylananing yuzasi S berilgan. Uning diametri d va radiusi R aniqlansin.
@@ -152,3 +151,69 @@ let x16_1=0,x16_2=2;
 let d ;
 d = Math.abs(x16_1-x16_2)
 console.log(d)
+
+// Begin17. Sonlar o`qida A, B, C nuqtalar berilgan. 
+// AC va BC kesmalarning uzunligini va kesmalar uzunligining yig`indisini topuvchi programma tuzilsin.
+
+
+let a17=17,b17=29,c17=98;
+let ac17 = Math.abs(a17-c17)
+let bc17 = Math.abs(b17-c17)
+
+console.log(ac17, bc17, ac17+bc17)
+
+
+// Begin18. Sonlar o`qida A, B, C nuqtalar berilgan. 
+// C nuqta A va B nuqtalar orasida joylashgan. AC va BC kesmalar uzunligining ko`paytmasini toping.
+
+
+let a18=12,b18 = 23, c18 = 16;
+let ac18= Math.abs(c18-a18)
+let bc18 = Math.abs(b18-c18)
+console.log(bc18 * ac18)
+
+
+
+// Begin19. To`g`ri to`rtburchakning qarama-qarshi uchlari koordinatlari berilgan. 
+// Uning tomonlari koordinata o`qiga parallel. To`g`ri to`rtburchakning perimetri va yuzasi aniqlansin.
+
+let x19_1 = 2,y19_1 = 2,x19_3 = -9 , y19_3= -9;
+let a19 = Math.abs(x19_1 - x19_3)
+let b19= Math.abs(y19_1 - y19_3)
+let p19 = 2*(a19 + b19)
+let s19 = a19 * b19
+console.log(p19,s19)
+
+
+
+
+
+
+// Begin20. Tekislikdagi berilgan ikki nuqta (x1,y1) va (x2,y2) orasidagi masofa topilsin.
+// d = sqrt((x2 - x1)^2 + (y2 - y1)^2)
+
+
+let x20_1 = 1, x20_2=3,y20_1=8,y20_2 = 23;
+
+let d20 = Math.sqrt((x20_1-x20_2)**2 + (y20_1 - y20_2)**2)
+
+console.log(d20)
+
+// Begin21. Uchburchakning uchta tomoni uchlari koordinatlari berilgan (x1,y1), (x2,y2), (x3,y3). Ikki nuqta orasidagi masofani topish Begin20 da berilgan. Uchburchakning yuzasini va perimetrini toping.
+// S = sqrt(p(p - a)(p - b)(p - c)),  p = (a + b + c) / 2
+
+// Begin22. Berilgan A va B sonlarining qiymatlarini almashtiring. A va B ning yangi qiymati ekranga chiqarilsin.
+
+// Begin23. A, B va C sonlari berilgan. A ni qiymati B ga, B ni qiymati C ga va C ni qiymati A ga almashtirilsin. A, B va C ning yangi qiymatilari ekranga chiqarilsin.
+
+// Begin24. A, B va C sonlari berilgan. A ni qiymati C ga, C ni qiymati B ga va B ni qiymati A ga almashtirilsin. A, B va C ning yangi qiymatilari ekranga chiqarilsin.
+
+// Begin25. x ning qiymati berilganda y = 3x^6 - 6x^2 - 7 funksiyaning qiymati aniqlansin.
+
+// Begin26. x ning qiymati berilganda y = 4(x - 3)^6 - 7(x - 3)^3 + 2 funksiyaning qiymati aniqlansin.
+
+// Begin27. A soni berilgan. A ning A^2, A^4, A^8 darajalarini aniqlovchi programma tuzilsin.
+
+// Begin28. A soni berilgan. A ning A^2, A^3, A^5, A^10, A^15 darajalarini aniqlovchi programma tuzilsin.
+
+// Begin29. α burchak gradusda berilgan (0° < α < 360°). Berilgan burchakning qiymatini radianga o`tkazuvchi programma tuzilsin.
