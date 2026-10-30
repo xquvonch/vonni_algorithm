@@ -199,21 +199,119 @@ let d20 = Math.sqrt((x20_1-x20_2)**2 + (y20_1 - y20_2)**2)
 
 console.log(d20)
 
-// Begin21. Uchburchakning uchta tomoni uchlari koordinatlari berilgan (x1,y1), (x2,y2), (x3,y3). Ikki nuqta orasidagi masofani topish Begin20 da berilgan. Uchburchakning yuzasini va perimetrini toping.
+// Begin21. Uchburchakning uchta tomoni uchlari koordinatlari berilgan (x1,y1), (x2,y2), (x3,y3). 
+// Ikki nuqta orasidagi masofani topish Begin20 da berilgan.
+//  Uchburchakning yuzasini va perimetrini toping.
 // S = sqrt(p(p - a)(p - b)(p - c)),  p = (a + b + c) / 2
 
-// Begin22. Berilgan A va B sonlarining qiymatlarini almashtiring. A va B ning yangi qiymati ekranga chiqarilsin.
 
-// Begin23. A, B va C sonlari berilgan. A ni qiymati B ga, B ni qiymati C ga va C ni qiymati A ga almashtirilsin. A, B va C ning yangi qiymatilari ekranga chiqarilsin.
 
-// Begin24. A, B va C sonlari berilgan. A ni qiymati C ga, C ni qiymati B ga va B ni qiymati A ga almashtirilsin. A, B va C ning yangi qiymatilari ekranga chiqarilsin.
+let x21_1 = 1,y21_1 = 1,x21_2 = 5 , y21_2 = 5, x21_3 = 1, y21_3 = 5;
+let a21 = Math.sqrt((x21_1-x21_2)**2 + (y21_1-y21_2)**2)
+let b21 = Math.sqrt((x21_3-x21_2)**2 + (y21_3-y21_2)**2)
+let c21 = Math.sqrt((x21_1-x21_3)**2 + (y21_1-y21_3)**2)
+let P21 = (a21 + b21 + c21)
+let p21 = P21/2
+let s21 = Math.sqrt(p21*(p21-a21)*(p21-b21)*(p21-c21))
+
+console.log(P21,s21)
+
+
+// Begin22. Berilgan A va B sonlarining qiymatlarini almashtiring. 
+// A va B ning yangi qiymati ekranga chiqarilsin.
+
+let a22 =21, b22=23
+a22 = a22 + b22;
+b22 = a22 - b22
+a22 = a22 - b22;
+// let c = a;
+// a = b;
+// b = c;
+console.log(a22 , b22)
+
+
+// Begin23. A, B va C sonlari berilgan. 
+// A ni qiymati B ga, B ni qiymati C ga va C ni qiymati A ga almashtirilsin.
+//  A, B va C ning yangi qiymatilari ekranga chiqarilsin.
+
+let a23 = 1, b23 = 2, c23 = 3;
+a23 = a23 + b23 + c23;
+ b23 = a23 - b23 - c23;
+ c23 = a23 - b23 - c23
+a23 =  a23 - b23 - c23 
+
+console.log( 'a' +a23 ,"b" +b23, "c"+c23)
+
+
+
+// Begin24. A, B va C sonlari berilgan. 
+// A ni qiymati C ga, C ni qiymati B ga va B ni qiymati A ga almashtirilsin.
+//  A, B va C ning yangi qiymatilari ekranga chiqarilsin.
+
+
+let a24 = 1, b24 = 2, c24 = 3;
+a24 = a24 + b24+ c24;
+c24 = a24 - b24 - c24
+b24 = a24 - b24 - c24
+a24  = a24 - b24 - c24
+
+console.log(a24, b24, c24)
+
+
 
 // Begin25. x ning qiymati berilganda y = 3x^6 - 6x^2 - 7 funksiyaning qiymati aniqlansin.
 
+let x25 = 1;
+let y25 = 3 * x25**6 - 6 * x25**2 - 7;
+
+
+console.log(y25)
+
 // Begin26. x ning qiymati berilganda y = 4(x - 3)^6 - 7(x - 3)^3 + 2 funksiyaning qiymati aniqlansin.
 
+
+
+let x26 = 4
+let y26 = 4*(x26-3)**6-7*(x26-3)**3 +2
+
+console.log(y26)
 // Begin27. A soni berilgan. A ning A^2, A^4, A^8 darajalarini aniqlovchi programma tuzilsin.
 
-// Begin28. A soni berilgan. A ning A^2, A^3, A^5, A^10, A^15 darajalarini aniqlovchi programma tuzilsin.
 
-// Begin29. α burchak gradusda berilgan (0° < α < 360°). Berilgan burchakning qiymatini radianga o`tkazuvchi programma tuzilsin.
+let a27 = 2;
+console.log(a27**2, a27**4, a27**8)
+
+
+
+
+
+// Begin28. A soni berilgan. 
+// A ning A^2, A^3, A^5, A^10, A^15 darajalarini aniqlovchi programma tuzilsin.
+
+let a28 = 2;
+
+const kvadrad=(a , n)=>{
+
+    return a ** n
+}
+
+
+console.log(kvadrad(2,2))
+console.log(kvadrad(2,3))
+console.log(kvadrad(2,5))
+console.log(kvadrad(2,10))
+console.log(kvadrad(2,15))
+console.log(kvadrad(2,20))
+
+
+
+
+// Begin29. α burchak gradusda berilgan (0° < α < 360°).
+//  Berilgan burchakning qiymatini radianga o`tkazuvchi programma tuzilsin.
+
+
+let a29 = 180
+
+let rad29 = a29/Math.PI
+
+console.log(rad29)
