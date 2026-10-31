@@ -1,4 +1,4 @@
-// Begin1. Kvadratning tomoni a berilgan. Uning perimetri aniqlansin. P = 4 * a
+// //Begin1. Kvadratning tomoni a berilgan. Uning perimetri aniqlansin. P = 4 * a
 
 let a1 =12;
 let P=4*a1;
@@ -312,6 +312,126 @@ console.log(kvadrad(2,20))
 
 let a29 = 180
 
-let rad29 = a29/Math.PI
+let rad29 = a29* Math.PI / 180
 
 console.log(rad29)
+
+//Begin30. α burchak radianda berilgan (0 < α < 2π). 
+// Berilgan burchakning qiymatini gradusga o`tkazuvchi programma tuzilsin.
+
+let a30 = 3.14
+
+let y30 = a30 * (180/Math.PI)
+console.log(y30)
+
+
+
+//Begin31. Temperatura T_F Farengeytda berilgan.
+//  Temperatura qiymatini T_C gradus selsiyga o`tkazuvchi programma tuzilsin.
+//T_C = (T_F − 32) · 5/9
+
+let tf31 = 123;
+let tc31 = (tf31 - 32)*5/9
+console.log(tc31)
+
+
+//Begin32. Temperatura T_F gradus Selsiyda berilgan. 
+// Temperatura qiymatini T_C Farengeytga o`tkazuvchi programma tuzilsin.
+//T_C = (T_F − 32) · 5/9
+
+let tc32 = 50
+let tf32 = tc32*9/5 + 32;
+console.log(tf32)
+
+
+//Begin33. X kg konfet A so`m turadi.
+//  1 kg va Y kg konfet qancha turishini aniqlovchi programma tuzilsin.
+
+let x33= 5 , a33 = 50
+let y33 = 3
+let one_kg = a33/x33
+console.log(one_kg, y33 *one_kg)
+
+//Begin34. X kg shokolad A som turadi va Y kg konfet B som turadi.
+//  1 kg shokolad 1 kg konfetdan qancha qimmat turishini aniqlovchi programma tuzilsin.
+
+let x34 = 2 , a34 = 200
+let y34 = 2  , b34 = 50
+
+console.log( a34 / x34 - b34 / y34)
+
+
+//Begin35. Qayiqning tezligi V km/soat, daryo oqimining tezligi U km/soat, 
+// (V > U). Qayiqning daryo oqimi boyicha harakatlanish vaqti T1, oqimga qarshi T2.
+//  Qayiqni yurgan S yolini aniqlovchi programma tuzilsin.
+let v35 = 20
+let u35 = 5,s34 
+let t35_2 = 2
+let t35_1 = 1
+
+let s35 = t35_1*(v35+u35) + t35_2*(v35 - u35)
+
+console.log(s35)
+
+
+
+//Begin36. Birinchi avtomobilning tezligi V1 km/soat,
+//  ikkinchisiniki V2 km/soat, ular orasidagi masofa S.
+//  Ular biri–biridan uzoqlasha boshlasa T vaqtdan keyin ular orasidagi masofani aniqlaydigan programma tuzilsin.
+
+let v36_1 = 10
+let v36_2 = 20,s36 = 12
+let t36 = 2
+let y36 = t36 * (v36_1 + v36_2)
+
+console.log(y36+s36)
+
+
+//Begin37. Birinchi avtomobilning tezligi V1 km/soat,
+//  ikkinchisiniki V2 km/soat, ular orasidagi masofa S.
+//  Ular biri–biri tomonga harakatlana boshlasa T vaqtdan keyin ular orasidagi
+//  masofani aniqlaydigan programma tuzilsin.
+
+let v37_1 = 10
+let v37_2 = 20
+let t37 = 2
+let s37=100
+let y37 = t37 * (v37_1 + v37_2)
+
+console.log(s37 - y37)
+
+
+//Begin38. A va B koeffisentlari berilgan,
+//  A·x + B = 0 chiziqli tenglamaning yechimini (x ni) aniqlaydigan programma tuzilsin. (A ≠ 0)
+
+let a38 = 2, b38 = 12
+let x38 = -b38/a38
+console.log(x38)
+
+
+
+
+//Begin39. A, B, C koeffisentlari berilgan,
+//  Ax² + Bx + C = 0 kvadrat tenglamaning diskriminanti noldan katta bo`lsa
+//  uning yechimlarini aniqlaydigan programma tuzilsin. (A ≠ 0);
+//x₁,₂ = (−B ± √D) / 2·A; D = B² − 4·A·C;
+
+let a39 = 1, b39 = 2 ,c39 = -3
+let x1 = ( -b39/2 - Math.sqrt( (b39/2)**2 -a39*c39))/a39
+let x2 =  (-b39/2 + Math.sqrt( (b39/2)**2 -a39*c39))/a39
+
+console.log(x1, x2)
+
+//Begin40. A1, B1, C1, A2, B2, C2 koeffisentlari berilgan,
+//  chiziqli tenglamalar sistemasi yechimlarini aniqlaydigan programma tuzilsin.
+// A1·x + B1·y = C1
+// A2·x + B2·y = C2;
+// x = (C1·B2 − C2·B1)
+//  / D; y = (A1·C2 − A2·C1) 
+// / D; D = (A1·B2 − A2·B1)
+let a40_1 = 1, b40_1 = 2, b40_2, c40_1, c40_2 = 3,a40_2 = 9
+let d40 = a40_1 * b40_2 - a40_2 * b40_1
+let x40 = (c40_1 * b40_2 - c40_2 * b40_1) / d40
+let y40 = (a40_1 * c40_2 - a40_2 * c40_1) / d40
+
+console.log(x40, y40)
