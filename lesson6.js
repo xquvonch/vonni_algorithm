@@ -46,8 +46,8 @@ console.log(Math.floor(res))
 let a5  = 27
 let b5 = 4
 
-res = Math.floor(res)
-console.log(a5/b5 - res)
+res = Math.floor(a5/b5)
+console.log(res)
 
 
 // Integer6. Ikki xonali son berilgan.
@@ -114,3 +114,96 @@ console.log(yuzlik11+unlik10+birlik10)
 // Integer12. Uch xonali son berilgan. 
 // Uning raqamlarini teskari tartibda yozishdan hosil bo`lgan sonni aniqlovchi program tuzilsin.
 console.log(""+birlik10+unlik10+yuzlik11)
+
+
+//Integer13. Uch xonali son berilgan. Uning chapdan birinchi raqamini o’chirib o’ng
+//  tarafiga yozishdan hosil bo’lgan sonni aniqlovchi programma tuzilsin.
+
+
+
+let son13 = 928
+let unlik13 = son13%100
+let yuzlik13 = (son13-unlik13)/100
+console.log(yuzlik13)
+console.log(unlik13+""+yuzlik13)
+
+//Integer14. Uch xonali son berilgan. Uning o’ngdan birinchi raqamini o’chirib 
+// chap tarafiga yozishdan hosil bo’lgan sonni aniqlovchi programma tuzilsin.
+
+let birlik14 = son13%10
+let son_P_14 = (son13-birlik14)/10
+console.log(birlik14+""+son_P_14)
+
+
+
+//Integer15. Uch xonali son berilgan. Uning o’nliklar xonasidagi raqam bilan 
+// yuzliklar xonasidagi raqamni almashtirishdan hosil bo’lgan sonni aniqlovchi programma tuzilsin.
+//  (Kirish = 123; Natija = 213)
+
+
+console.log(""+unlik10+yuzlik11+birlik10)
+
+//Integer16. Uch xonali son berilgan. Uning o’nliklar xonasidagi raqam bilan
+//  birliklar xonasidagi raqamni almashtirishdan hosil bo’lgan sonni aniqlovchi programma tuzilsin. 
+// (Kirish = 123; Natija = 132)
+
+
+
+console.log(""+yuzlik11+birlik10+unlik10)
+//Integer17. 999 dan katta bo’lgan son berilgan. Bir marta bo’lib butunni 
+// va bo’lib qoldiqni olish operatsiyasidan foydalanib berilgan sonni yuzliklar
+//  xonasidagi sonni aniqlovchi programma tuzilsin.
+
+
+let son17 =99999999999123
+let son_kk =Math.floor((son17%1000)/100)
+
+console.log(son_kk)
+
+
+
+//Integer18. 999 dan katta bo’lgan son berilgan.
+//  Bir marta bo’lib butunni va bo’lib qoldiqni olish operatsiyasidan foydalanib
+//  berilgan sonni mingliklar xonasidagi sonni aniqlovchi programma tuzilsin.
+ son_kk = Math.floor((son17%10000)/1000)
+ console.log(son_kk)
+
+
+//Integer19. Kun boshidan boshlab N sekund vaqt o’tti.
+//  Kun boshidan boshlab qancha minut to’la o’tganligini aniqlovchi programma tuzilsin.
+
+let sekund = 7222
+
+let minut = Math.floor(sekund/60)
+console.log(minut)
+
+
+//Integer20. Kun boshidan boshlab N sekund vaqt o’tti. 
+// Kun boshidan boshlab qancha to’la soat o’tganligini aniqlovchi programma tuzilsin.
+
+let soat = Math.floor(sekund/3600)
+console.log(soat)
+
+//Integer21. Kun boshidan boshlab N sekund vaqt o’tti.
+//  Kun boshidan boshlab qancha minut va sekund o’tganini aniqlovchi programma tuzilsin.
+let sknd = sekund%60
+let mnt = (sekund-sknd)/60
+console.log(mnt,sknd)
+
+//Integer22. Kun boshidan boshlab N sekund vaqt o’tti. 
+// Kun boshidan boshlab qancha soat va sekund o’tganini aniqlovchi programma tuzilsin.
+
+let sknd1 = sekund%3600
+let soat1 = (sekund-sknd1)/3600
+
+console.log(soat1,sknd1 )
+
+//Integer23. Kun boshidan boshlab N sekund vaqt o’tti. 
+// Kun boshidan boshlab qancha soat, 
+// minut va sekund o’tganini aniqlovchi programma tuzilsin.
+
+let sknd2 = sekund%60
+let mnt2 = ((sekund-sknd2)%3600)/60
+let soat2= ((sekund - mnt2*60-sknd2)/3600)
+
+console.log(soat2,mnt2,sknd2)
