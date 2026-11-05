@@ -207,3 +207,43 @@ let mnt2 = ((sekund-sknd2)%3600)/60
 let soat2= ((sekund - mnt2*60-sknd2)/3600)
 
 console.log(soat2,mnt2,sknd2)
+
+//Integer24. Hafta kunlari quyidagicha tartibda berilgan.
+//  0-yakshanba, 1-dushanba, 2-seshanba, 3-chorshanba, 4-payshanba, 5-juma, 6-shanba. 
+// 1-365 oralig‘ida yotuvchi K soni berilgan. Agar 1-yanvar dushanba bo‘lsa, 
+// kiritilgan K-kun haftaning qaysi kuniga to‘g‘ri kelishini aniqlovchi programma tuzilsin.
+
+
+let day = prompt("Son kiriting")
+let dy = +day%7 
+alert(dy)
+
+
+
+
+
+
+//Integer25. Hafta kunlari quyidagicha tartibda berilgan.
+//  0-yakshanba, 1-dushanba, 2-seshanba, 3-chorshanba, 4-payshanba, 5-juma, 6-shanba. 
+// 1-365 oralig‘ida yotuvchi K soni berilgan. Agar 1-yanvar payshanba bo‘lsa,
+//  kiritilgan K-kun haftaning qaysi kuniga to‘g‘ri kelishini aniqlovchi programma tuzilsin.
+
+
+
+
+let kun = prompt("entire")
+let kn = (+kun+3)%7 
+console.log(kn)
+
+//Integer26. Hafta kunlari quyidagicha tartibda berilgan. 
+// 1-dushanba, 2-seshanba, 3-chorshanba, 4-payshanba, 5-juma, 6-shanba, 7-yakshanba. 
+// 1-365 oralig‘ida yotuvchi K soni berilgan. Agar 1-yanvar seshanba bo‘lsa,
+//  kiritilgan K-kun haftaning qaysi kuniga to‘g‘ri kelishini aniqlovchi programma tuzilsin.
+
+//Integer27. Hafta kunlari quyidagicha tartibda berilgan. 1-dushanba, 2-seshanba, 3-chorshanba, 4-payshanba, 5-juma, 6-shanba, 7-yakshanba. 1-365 oralig‘ida yotuvchi K soni berilgan. Agar 1-yanvar yakshanba bo‘lsa, kiritilgan K-kun haftaning qaysi kuniga to‘g‘ri kelishini aniqlovchi programma tuzilsin.
+
+//Integer28. Hafta kunlari quyidagicha tartibda berilgan. 1-dushanba, 2-seshanba, 3-chorshanba, 4-payshanba, 5-juma, 6-shanba, 7-yakshanba (N 1-7 gacha bo‘lgan hafta kunlari soni). 1-365 oralig‘ida yotuvchi K soni berilgan. Agar 1-yanvar N chi kunga to‘g‘ri kelsa, kiritilgan K-kun haftaning qaysi kuniga to‘g‘ri kelishini aniqlovchi programma tuzilsin.
+
+//Integer29. A,B,C butun sonlar berilgan. Tomonlari A va B bo‘lgan to‘g‘ri to‘rtburchakka tomoni C bo‘lgan kvadrat eng ko‘p joylashtirilsin. To‘g‘ri to‘rtburchakka eng ko‘p joylashgan kvadratlar soni va joylashmay qolgan qismi yuzasini aniqlovchi programma tuzilsin.
+
+//Integer30. Qaysidir yil berilgan. Berilgan yilning qaysi yuz yillikka kirishini aniqlovchi programma tuzilsin. (Masalan: 20-yuz yillikning boshi 1901 yil).
