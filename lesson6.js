@@ -240,10 +240,58 @@ console.log(kn)
 // 1-365 oralig‘ida yotuvchi K soni berilgan. Agar 1-yanvar seshanba bo‘lsa,
 //  kiritilgan K-kun haftaning qaysi kuniga to‘g‘ri kelishini aniqlovchi programma tuzilsin.
 
-//Integer27. Hafta kunlari quyidagicha tartibda berilgan. 1-dushanba, 2-seshanba, 3-chorshanba, 4-payshanba, 5-juma, 6-shanba, 7-yakshanba. 1-365 oralig‘ida yotuvchi K soni berilgan. Agar 1-yanvar yakshanba bo‘lsa, kiritilgan K-kun haftaning qaysi kuniga to‘g‘ri kelishini aniqlovchi programma tuzilsin.
 
-//Integer28. Hafta kunlari quyidagicha tartibda berilgan. 1-dushanba, 2-seshanba, 3-chorshanba, 4-payshanba, 5-juma, 6-shanba, 7-yakshanba (N 1-7 gacha bo‘lgan hafta kunlari soni). 1-365 oralig‘ida yotuvchi K soni berilgan. Agar 1-yanvar N chi kunga to‘g‘ri kelsa, kiritilgan K-kun haftaning qaysi kuniga to‘g‘ri kelishini aniqlovchi programma tuzilsin.
+kn = (+kun ) % 7 + 1
+console.log(kn)
 
-//Integer29. A,B,C butun sonlar berilgan. Tomonlari A va B bo‘lgan to‘g‘ri to‘rtburchakka tomoni C bo‘lgan kvadrat eng ko‘p joylashtirilsin. To‘g‘ri to‘rtburchakka eng ko‘p joylashgan kvadratlar soni va joylashmay qolgan qismi yuzasini aniqlovchi programma tuzilsin.
 
-//Integer30. Qaysidir yil berilgan. Berilgan yilning qaysi yuz yillikka kirishini aniqlovchi programma tuzilsin. (Masalan: 20-yuz yillikning boshi 1901 yil).
+
+//Integer27. Hafta kunlari quyidagicha tartibda berilgan. 
+// 1-dushanba, 2-seshanba, 3-chorshanba, 4-payshanba, 5-juma, 6-shanba, 7-yakshanba. 
+// 1-365 oralig‘ida yotuvchi K soni berilgan. Agar 1-yanvar yakshanba bo‘lsa, 
+// kiritilgan K-kun haftaning qaysi kuniga to‘g‘ri kelishini aniqlovchi programma tuzilsin.
+
+kn=(+kun +5)%7 + 1
+console.log(kn)
+
+
+
+//Integer28. Hafta kunlari quyidagicha tartibda berilgan. 
+// 1-dushanba, 2-seshanba, 3-chorshanba, 4-payshanba, 5-juma, 6-shanba, 7-yakshanba 
+// (N 1-7 gacha bo‘lgan hafta kunlari soni). 1-365 oralig‘ida yotuvchi K soni berilgan. 
+// Agar 1-yanvar N chi kunga to‘g‘ri kelsa, kiritilgan K-kun haftaning qaysi kuniga to‘g‘ri 
+// kelishini aniqlovchi programma tuzilsin.
+
+let k=2,n = 6
+kn=(+k + n -2)%7 +1
+console.log(kn)
+
+
+
+
+
+
+//Integer29. A,B,C butun sonlar berilgan. 
+// Tomonlari A va B bo‘lgan to‘g‘ri to‘rtburchakka tomoni C bo‘lgan kvadrat eng ko‘p joylashtirilsin. 
+// To‘g‘ri to‘rtburchakka eng ko‘p joylashgan kvadratlar soni va
+//  joylashmay qolgan qismi yuzasini aniqlovchi programma tuzilsin.
+
+
+let a = 24,b=20, c=3
+
+let a1 = a - a%c
+let b1 = b - b%c
+console.log((a1 * b1)/c**2)
+console.log(a * b - a1*b1)
+
+
+
+//Integer30. Qaysidir yil berilgan. 
+// Berilgan yilning qaysi yuz yillikka kirishini aniqlovchi programma tuzilsin. 
+// (Masalan: 20-yuz yillikning boshi 1901 yil).
+
+
+let year = 2001 
+
+let kk = (year-1)- (year-1) % 100
+console.log(kk/100 + 1)
