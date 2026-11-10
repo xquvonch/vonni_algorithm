@@ -239,12 +239,41 @@ console.log(res)
 // Doskaning chap pastki maydoni (1,1) qoraligini hisobga olib, 
 // jumlani rostlikka tekshiring: “Berilgan (x, y) maydon oq”.
 
-//Boolean35. Shaxmat doskasining ikkita turli (x1, y1), (x2, y2) koordinalari berilgan (1-8 oraliqda yotuvchi butun sonlar). Jumlani rostlikka tekshiring: “Berilgan maydonlar bir xil rangda”.
 
-//Boolean36. Shaxmat doskasining ikkita turli (x1, y1), (x2, y2) koordinalari berilgan (1-8 oraliqda yotuvchi butun sonlar). Jumlani rostlikka tekshiring: “Ruh bir yurishda bir maydondan ikkinchisiga o’ta oladi”.
+x = 2, y=2
 
-//Boolean37. Shaxmat doskasining ikkita turli (x1, y1), (x2, y2) koordinalari berilgan (1-8 oraliqda yotuvchi butun sonlar). Jumlani rostlikka tekshiring: “Shoh bir yurishda bir maydondan ikkinchisiga o’ta oladi.”
+console.log((x+y) % 2==1)
 
-//Boolean38. Shaxmat doskasining ikkita turli (x1, y1), (x2, y2) koordinalari berilgan (1-8 oraliqda yotuvchi butun sonlar). Jumlani rostlikka tekshiring: “Fil bir yurishda bir maydondan ikkinchisiga o’ta oladi”.
 
-//Boolean39. Shaxmat doskasining ikkita turli (x1, y1), (x2, y2) koordinalari berilgan (1-8 oraliqda yotuvchi butun sonlar). Jumlani rostlikka tekshiring: “Farzin bir yurishda bir maydondan ikkinchisiga o’ta oladi”.
+//Boolean35. Shaxmat doskasining ikkita turli (x1, y1), (x2, y2) 
+// koordinalari berilgan (1-8 oraliqda yotuvchi butun sonlar). 
+// Jumlani rostlikka tekshiring: “Berilgan maydonlar bir xil rangda”.
+
+x1 = 2 , y1 = 2, x2 = 2, y2 =8 
+
+res = (x1+y1)%2==(x2+y2)%2
+
+console.log(res)
+
+
+//Boolean36. Shaxmat doskasining ikkita turli (x1, y1), (x2, y2) 
+// koordinalari berilgan (1-8 oraliqda yotuvchi butun sonlar). 
+// Jumlani rostlikka tekshiring: “Ruh bir yurishda bir maydondan ikkinchisiga o’ta oladi”.
+
+
+
+
+//Boolean37. Shaxmat doskasining ikkita turli (x1, y1), (x2, y2) koordinalari berilgan 
+// (1-8 oraliqda yotuvchi butun sonlar). Jumlani rostlikka tekshiring: 
+// “Shoh bir yurishda bir maydondan ikkinchisiga o’ta oladi.”
+
+
+
+
+//Boolean38. Shaxmat doskasining ikkita turli (x1, y1), (x2, y2) koordinalari berilgan 
+// (1-8 oraliqda yotuvchi butun sonlar). Jumlani rostlikka tekshiring: 
+// “Fil bir yurishda bir maydondan ikkinchisiga o’ta oladi”.
+
+//Boolean39. Shaxmat doskasining ikkita turli (x1, y1), (x2, y2) koordinalari berilgan 
+// (1-8 oraliqda yotuvchi butun sonlar). Jumlani rostlikka tekshiring: 
+// “Farzin bir yurishda bir maydondan ikkinchisiga o’ta oladi”.
