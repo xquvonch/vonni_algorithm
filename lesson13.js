@@ -106,7 +106,8 @@ switch (son) {
     days = 30;
     break;
   case 2:
-    days = 28;break;
+    days = 28;
+    break;
   default:
     days = " bunday oy mavjud emas";
 }
@@ -224,7 +225,7 @@ switch (mn) {
   default:
     console.log("Error");
 }
-res+=dy
+res += dy;
 console.log(res, dy);
 
 //Case9. Ikkita butun son berilgan D (kun) va M (oy). (Kabisa bo`lmagan yil sanasi kiritiladi).
@@ -457,9 +458,9 @@ console.log(yun);
 //Case12. Doiraning elementlari quyidagi tartibda nomerlangan.
 // 1-radius R, 2-diametr D = 2·R, 3-uzunligi L = 2·π·R, 4-doiraning yuzasi S = π·R².
 // Shu elementlardan bittasi berilganda qolganlarini topuvchi programma tuzilsin. π = 3.14
-((r = 2), d=2, s=2);
-let l=2;
-one = 1
+((r = 2), (d = 2), (s = 2));
+let l = 2;
+one = 1;
 switch (one) {
   case 1:
     d = 2 * r;
@@ -489,44 +490,257 @@ console.log(r, d, l, s);
 // Shu elementlardan bittasi berilganda qolganlarini topuvchi programma tuzilsin.
 
 ((a = 3), b, (c = 5), (h = 2.5));
-s=2;
+s = 2;
 one = 2;
 switch (one) {
   case 1:
     c = Math.sqrt(2) * a;
     h = c / 2;
     s = (c * h) / 2;
-    b = Math.sqrt(c ** 2 - a ** 2);break;
+    b = Math.sqrt(c ** 2 - a ** 2);
+    break;
   case 2:
     a = c / Math.sqrt(2);
     h = c / 2;
     s = (c * h) / 2;
-    b = Math.sqrt(c ** 2 - a ** 2);break;
+    b = Math.sqrt(c ** 2 - a ** 2);
+    break;
   case 3:
     c = 2 * h;
     a = c / Math.sqrt(2);
     s = (c * h) / 2;
-    b = Math.sqrt(c ** 2 - a ** 2);break;
+    b = Math.sqrt(c ** 2 - a ** 2);
+    break;
   case 4:
     c = (2 * s) / h;
     a = c / Math.sqrt(2);
     h = c / 2;
-    b = Math.sqrt(c ** 2 - a ** 2);break;
+    b = Math.sqrt(c ** 2 - a ** 2);
+    break;
 }
 
-console.log(a, c, h , s)
+console.log(a, c, h, s);
 
-//Case14. Tengtomonli uchburchakning elementlari quyidagi tartibda nomerlangan. 1-tomoni a, 2-ichki chizilgan aylananing radiusi R₁ = a·√3/6, 3- tashqi chizilgan aylananing radiusi R₂ = 2·R₁, 4-yuzasi S = a²·√3/4. Shu elementlardan bittasi berilganda qolganlarini topuvchi programma tuzilsin.
+//Case14. Tengtomonli uchburchakning elementlari quyidagi tartibda nomerlangan.
+// 1-tomoni a, 2-ichki chizilgan aylananing radiusi R₁ = a·√3/6,
+// 3- tashqi chizilgan aylananing radiusi R₂ = 2·R₁, 4-yuzasi S = a²·√3/4.
+// Shu elementlardan bittasi berilganda qolganlarini topuvchi programma tuzilsin.
 
-//Case15. O’yin kartasi turlari berilgan 1-g’isht, 2-olma, 3-chillak, 4-qarg’a. 10 lik kartadan katta kartalar quyidagi qiymatlarni o’zlashtirgan: 11-valet, 12-dama, 13-qirol, 14-tuz. Ikkita butun son berilgan N-karta qiymati (6 ≤ N ≤ 14), M-karta turi (1 ≤ M ≤ 4) kiritilganda karta nomlarini (masalan: “olti qarg’a”) chiqarib beruvchi programma tuzilsin.
+((a = 5), r);
+let R, S;
+one = 1;
 
-//Case16. Yoshni yillarda aniqlovchi 20-69 gacha butun son berilgan. Son kiritilganda unga mos so’zlarda ifodalovchi programma tuzilsin. (“yigirma yosh”, “qirq uch yosh” va h.k.)
+th = 3 ** 0.5;
 
-//Case17. O’quv masalalarini aniqlovchi 10-40 gacha butun son berilgan. Son kiritilganda unga mos so’zlarda ifodalovchi programma tuzilsin. (“yigirmata masala”, “o’n uchta masala” va h.k.)
+switch (one) {
+  case 1:
+    r = (a * th) / 6;
+    R = 2 * r;
+    s = (a ** 2 * th) / 4;
+    break;
+  case 2:
+    a = (r * 6) / th;
+    R = 2 * r;
+    s = (a ** 2 * th) / 4;
+    break;
+  case 3:
+    r = R / 2;
+    a = (r * 6) / th;
+    s = (a ** 2 * th) / 4;
+    break;
+  case 4:
+    a = Math.sqrt(s * 4);
+    r = (a * th) / 6;
+    R = 2 * r;
+    break;
+}
 
-//Case18. 100-999 gacha oraliqdagi sonlarni so’zlarda ifodalovchi programma tuzilsin. (masalan: 123-“bir yuz yigirma uch”).
+console.log(a, r, R, s);
+//Case15. O’yin kartasi turlari berilgan 1-g’isht, 2-olma, 3-chillak, 4-qarg’a.
+//  10 lik kartadan katta kartalar quyidagi qiymatlarni o’zlashtirgan:
+// 11-valet, 12-dama, 13-qirol, 14-tuz. Ikkita butun son berilgan N-karta qiymati (6 ≤ N ≤ 14),
+//  M-karta turi (1 ≤ M ≤ 4) kiritilganda karta nomlarini
+// (masalan: “olti qarg’a”) chiqarib beruvchi programma tuzilsin.
 
-//Case19. Sharq kalendarida 60 yillik davr qabul qilingan. Yil muchali 5 ta rang (yashil, qizil, sariq, oq va qora) va 12 ta hayvon (sichqon, sigir, yo’lbars, quyon, ajdar, ilon, ot, qo’y, maymun, tovuq, it va to’ngizlardan) nomlaring kombinatsiyasidan kelib chiqadi. Yilning raqamiga qarab uning muchalini aniqlovchi programma tuzilsin. 1984-davr boshi: “Yashil sichqon yili”.
+let N = 6,
+  M = 3;
+
+let nb = "";
+st = "";
+
+switch (M) {
+  case 1:
+    st = "G'isht";
+    break;
+  case 2:
+    st = "Olma";
+    break;
+  case 3:
+    st = "Chillak";
+    break;
+  case 4:
+    st = "Qarg'a";
+    break;
+  default:
+    st = "Bunday karta yuq";
+}
+
+console.log(N + " " + st);
+
+//Case16. Yoshni yillarda aniqlovchi 20-69 gacha butun son berilgan.
+// Son kiritilganda unga mos so’zlarda ifodalovchi programma tuzilsin.
+// (“yigirma yosh”, “qirq uch yosh” va h.k.)
+
+let yo = 54;
+
+let unlik = Math.floor(yo / 10);
+let birlik = yo % 10;
+console.log(unlik, birlik);
+let st1 = "";
+let st2 = ""
+switch (unlik) {
+  case 2:
+    st1 = "Yigirma";
+    break;
+  case 3:
+    st1 = "O'ttiz";
+    break;
+  case 4:
+    st1 = "Qirq";
+    break;
+  case 5:
+    st1 = "Ellik";
+    break;
+  case 6:
+    st1 = "Oltmish";
+    break;
+}
+
+switch (birlik) {
+  case 1:st2 = "bir";break;
+  case 2:st2 = "ikki";break;
+  case 3:st2 = "uch";break;
+  case 4:st2 = "to'rt";break;
+  case 5:st2 = "besh";break;
+  case 6:st2 = "olit";break;
+  case 7:st2 = "yetti";break;
+  case 8:st2 = "sakkiz";break;
+  case 9:st2 = "to'qqiz";break;
+}
+
+
+console.log(st1+" "+st2)
+
+//Case17. O’quv masalalarini aniqlovchi 10-40 gacha butun son berilgan. 
+// Son kiritilganda unga mos so’zlarda ifodalovchi programma tuzilsin. (“yigirmata masala”, “o’n uchta masala” va h.k.)
+ nb = 34
+unlik = Math.floor(nb / 10);
+  birlik = nb % 10;
+console.log(unlik, birlik);
+ st1 = "";
+ st2 = ""
+
+switch (unlik) {
+  case 1:st1 = "O'n";break;
+  case 2:
+    st1 = "Yigirma";
+    break;
+  case 3:
+    st1 = "O'ttiz";
+    break;
+  case 4:
+    st1 = "Qirq";
+    break;
+}
+
+switch (birlik) {
+  case 1:st2 = "bir";break;
+  case 2:st2 = "ikki";break;
+  case 3:st2 = "uch";break;
+  case 4:st2 = "to'rt";break;
+  case 5:st2 = "besh";break;
+  case 6:st2 = "olit";break;
+  case 7:st2 = "yetti";break;
+  case 8:st2 = "sakkiz";break;
+  case 9:st2 = "to'qqiz";break;
+}
+
+
+console.log(st1+" "+st2)
+//Case18. 100-999 gacha oraliqdagi sonlarni so’zlarda ifodalovchi programma tuzilsin. 
+// (masalan: 123-“bir yuz yigirma uch”).
+
+ nb = 342
+yuzlik = Math.floor(nb / 100);
+unlik= Math.floor((nb - yuzlik*100)/10)
+birlik = nb % 10;
+console.log(yuzlik,unlik, birlik);
+ st1 = "";
+ st2 = ""
+ st3 = ""
+
+ switch (yuzlik) {
+  case 1:st1 = "bir";break;
+  case 2:st1 = "ikki";break;
+  case 3:st1 = "uch";break;
+  case 4:st1 = "to'rt";break;
+  case 5:st1 = "besh";break;
+  case 6:st1 = "olit";break;
+  case 7:st1 = "yetti";break;
+  case 8:st1 = "sakkiz";break;
+  case 9:st1 = "to'qqiz";break;
+}
+switch (unlik) {
+  case 1:st1 = "O'n";break;
+  case 2:
+    st2 = "Yigirma";
+    break;
+  case 3:
+    st2 = "O'ttiz";
+    break;
+  case 4:
+    st2 = "Qirq";
+    break;
+  case 5:
+    st2 = "Ellik";
+    break;
+  case 6:
+    st2 = "Oltmish";
+    break;
+     case 7:
+    st2 = "Yetmish";
+    break;
+  case 8:
+    st2 = "Sakson";
+    break;
+     case 9:
+    st2 = "to'qson";
+    break;
+ default:console.log("error")
+}
+
+switch (birlik) {
+  case 1:st3 = "bir";break;
+  case 2:st3 = "ikki";break;
+  case 3:st3 = "uch";break;
+  case 4:st3 = "to'rt";break;
+  case 5:st3 = "besh";break;
+  case 6:st3 = "olit";break;
+  case 7:st3 = "yetti";break;
+  case 8:st3 = "sakkiz";break;
+  case 9:st3 = "to'qqiz";break;
+}
+
+console.log(st1+" "+"yuz"+" "+st2+" "+st3)
+
+
+//Case19. Sharq kalendarida 60 yillik davr qabul qilingan. Yil muchali 5 ta rang (yashil, qizil, sariq, oq va qora) 
+// va 12 ta hayvon (sichqon, sigir, yo’lbars, quyon, ajdar, ilon, ot, qo’y, maymun, tovuq, it va to’ngizlardan) 
+// nomlaring kombinatsiyasidan kelib chiqadi. Yilning raqamiga qarab uning muchalini aniqlovchi programma tuzilsin. 
+// 1984-davr boshi: “Yashil sichqon yili”.
+
+
+
 
 //Case20. Ikkita burj vaqtlarini aniqlovchi butun son berilgan: D(kun), M(oy). Berilgan sana qaysi burjga kirishini aniqlovchi programma tuzilsin.
 //“Qovg’a (20.1-18.2)”, “Baliq (19.2-20.3)”, “Qo’y (21.3-19.4)”, “Buzoq (20.4-20.5)”, “Egizaklar (21.5-21.6)”, “Qisqichbaqa (22.6-22.7)”, “Arslon (23.7-22.8)”, “Parizod (23.8-22.9)”, “Tarozi (23.9-22.10)”, “Chayon (23.10-22.11)”, “O’qotar (23.11-21.12)”, “Echki (22.12-19.1)”.
